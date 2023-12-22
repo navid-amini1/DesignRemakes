@@ -16,16 +16,7 @@ struct CalendarView: View {
             monthBar
                 .padding(.horizontal)
             
-            HStack(spacing: 0) {
-                DayBox(date: 12, day: "Wed", isSelected: true)
-                Spacer()
-                DayBox(date: 13, day: "Thu", isSelected: false)
-                Spacer()
-                DayBox(date: 14, day: "Fri", isSelected: false)
-                Spacer()
-                DayBox(date: 15, day: "Sat", isSelected: false)
-            }
-            .padding(.horizontal)
+            DayBoxView()
             
             Text("Ongoing")
                 .font(.title)
@@ -189,5 +180,20 @@ struct DayBox: View {
 struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
         CalendarView()
+    }
+}
+
+struct DayBoxView: View {
+    var body: some View {
+        HStack(spacing: 0) {
+            DayBox(date: 12, day: "Wed", isSelected: true)
+            Spacer()
+            DayBox(date: 13, day: "Thu", isSelected: false)
+            Spacer()
+            DayBox(date: 14, day: "Fri", isSelected: false)
+            Spacer()
+            DayBox(date: 15, day: "Sat", isSelected: false)
+        }
+        .padding(.horizontal)
     }
 }
