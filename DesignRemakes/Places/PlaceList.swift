@@ -1,11 +1,4 @@
-//
-//  PlaceList.swift
-//  DesignRemakes
-//
-//  Created by Florian Schweizer on 23.12.21.
-//  Design from https://dribbble.com/shots/7217612-Travel-App-Search
-//  Images from unsplash.com
-//
+
 
 import SwiftUI
 
